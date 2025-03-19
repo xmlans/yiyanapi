@@ -2,11 +2,11 @@
 // api.xmc.tw/index.php
 // By Star Dream Studio
 // 设置响应类型和跨域头
-header("Content-Type: application/json; charset=UTF-8");
-header("Access-Control-Allow-Origin: *");  // 如有需要，可将 * 改为指定域名
+header("Content-Type: application/json; charset=UTF-8"); // 响应为json格式，字符集采用UTF-8
+header("Access-Control-Allow-Origin: *");  // 如有需要，可将 * 改为指定域名，默认为允许所有站外跨域访问
 
 // 数据库配置
-$host = 'localhost';   // 数据库连接地址
+$host = 'localhost';   // 数据库连接地址，如果MySQL部署在本地服务器的话保持默认即可，或设置为127.0.0.1
 $db   = '';   // 数据库名
 $user = '';   // 数据库用户名
 $pass = '';   // 数据库密码
